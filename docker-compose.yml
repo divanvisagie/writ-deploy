@@ -5,10 +5,10 @@ services:
         ports:
             - "8000:80"
         links:
-            - writapi:writapi
+            - writ-api:writ-api
         depends_on:
-            - writapi
-    writapi:
+            - writ-api
+    writ-api:
         image: divanvisagie/writ-api:latest
         ports:
           - "9999:9999"
